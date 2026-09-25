@@ -64,8 +64,7 @@ Pero si el rechazo fue claro ¿Por qué se usaría?
 
 El problema de fondo de un payment gateway no es procesar el pago, sino qué hacer cuando el sistema no sabe con certeza qué pasó (el servidor cae, la respuesta se pierde, el webhook llega duplicado o tarde).
 
-![Payment Gateway HLD](diagrams/payment-gateway-hld.png)
-(contracts/diagrams/payment-gateway-hld.png)
+![Payment Gateway HLD](contracts/diagrams/payment-gateway-hld.png)
 
 ### 4.1 Principios de diseño
 
