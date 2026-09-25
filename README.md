@@ -16,9 +16,8 @@ P.D: Voy a explicar paso a paso como si fuera un tutorial (para mí misma, afian
 
 **Cadena de causalidad:**
 
-```
+
 Paso A (OK) → Paso B (rompe: deja de enviar un parámetro) → Paso C (recibe payload incompleto) → Proveedor de pago (rechaza: falta un dato requerido)
-```
 
 Un cambio reciente en el paso B eliminó un parámetro que el paso C necesitaba para completar el request al proveedor de pago. Al llegar incompleto, el proveedor no puede procesar la transacción y el pago falla.
 
@@ -66,6 +65,7 @@ Pero si el rechazo fue claro ¿Por qué se usaría?
 El problema de fondo de un payment gateway no es procesar el pago, sino qué hacer cuando el sistema no sabe con certeza qué pasó (el servidor cae, la respuesta se pierde, el webhook llega duplicado o tarde).
 
 ![Payment Gateway HLD](diagrams/payment-gateway-hld.png)
+(contracts/diagrams/payment-gateway-hld.png)
 
 ### 4.1 Principios de diseño
 
